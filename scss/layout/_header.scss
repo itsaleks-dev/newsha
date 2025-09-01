@@ -37,6 +37,13 @@
     }
 }
 
+.delivery {
+
+    &__text {
+        color: vars.$color-turquoise;
+    }
+}
+
 .userbar {
     display: flex;
     align-items: center;

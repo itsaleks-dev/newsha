@@ -88,6 +88,10 @@ body {
   }
 }
 
+.delivery__text {
+  color: #6f9990;
+}
+
 .userbar {
   display: flex;
   align-items: center;
