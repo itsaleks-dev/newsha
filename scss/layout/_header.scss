@@ -11,6 +11,7 @@
     grid-template-columns: 1fr 3fr;
 
     @media (max-width: map.get(bp.$grid-breakpoints, sm)) {
+        margin-top: 20px;
         display: flex;
         flex-direction: column;
     }
