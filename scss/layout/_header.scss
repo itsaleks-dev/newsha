@@ -56,6 +56,14 @@
     display: flex;
     align-items: center;
     gap: 18px;
+
+    &__link--search {
+        @include mixins.resetButton;
+    }
+
+    &__link--cart {
+        @include mixins.resetButton;
+    }
 }
 
 .menu {

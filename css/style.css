@@ -107,6 +107,24 @@ body {
   align-items: center;
   gap: 18px;
 }
+.userbar__link--search {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.userbar__link--cart {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .menu {
   grid-column: 2/3;
