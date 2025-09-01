@@ -70,7 +70,7 @@ body {
     order: 2;
     margin-top: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
   }
 }
 
@@ -108,7 +108,7 @@ body {
   .menu {
     order: 3;
     display: flex;
-    justify-content: center;
+    justify-content: start;
   }
 }
 .menu__items {
