@@ -43,6 +43,10 @@
 
     &__text {
         color: vars.$color-turquoise;
+
+        @media (max-width: map.get(bp.$grid-breakpoints, sm)) {
+            font-size: 12px;
+        }
     }
 }
 
@@ -74,6 +78,11 @@
     &__link {
         @extend %fontMenu;
         color: vars.$color-black;
+
+        @media (max-width: map.get(bp.$grid-breakpoints, sm)) {
+            font-size: 14px;
+            font-weight: 500;
+        }
     }
 
 }
