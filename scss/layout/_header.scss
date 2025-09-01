@@ -30,7 +30,7 @@
 .topbar {
     @include mixins.gridTopbar;
     @include mixins.flexCenter;
-    gap: 98px;
+    gap: 160px;
 
     @media (max-width: map.get(bp.$grid-breakpoints, sm)) {
         order: 1;
@@ -42,6 +42,7 @@
 .delivery {
 
     &__text {
+        font-size: 14px;
         color: vars.$color-turquoise;
 
         @media (max-width: map.get(bp.$grid-breakpoints, sm)) {
