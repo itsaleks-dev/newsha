@@ -127,4 +127,15 @@ body {
   color: #000000;
 }
 
+.hero {
+  overflow: hidden;
+  margin-top: 50px;
+}
+.hero__image {
+  width: 1600px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */

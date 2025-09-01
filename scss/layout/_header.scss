@@ -77,3 +77,15 @@
     }
 
 }
+
+.hero {
+    overflow: hidden;
+    margin-top: 50px;
+
+    &__image {
+        width: 1600px;
+        height: 600px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+}
