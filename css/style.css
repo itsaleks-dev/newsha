@@ -132,8 +132,7 @@ body {
   margin-top: 50px;
 }
 .hero__image {
-  width: 1600px;
-  height: 600px;
+  width: 100%;
   object-fit: cover;
   border-radius: 20px;
 }
