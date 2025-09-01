@@ -1,0 +1,68 @@
+@use 'sass:map';
+
+@use '../common/fonts';
+@use '../common/colors' as vars;
+@use '../common/mixins' as mixins;
+@use '../common/breakpoints' as bp;
+
+.content--header {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+    @media (max-width: map.get(bp.$grid-breakpoints, sm)) {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+.logo {
+    @include mixins.gridLogo;
+
+    @media (max-width: map.get(bp.$grid-breakpoints, sm)) {
+        order: 2;
+        margin-top: 30px;
+    }
+}
+
+.topbar {
+    @include mixins.gridTopbar;
+    @include mixins.flexCenter;
+    gap: 98px;
+
+    @media (max-width: map.get(bp.$grid-breakpoints, sm)) {
+        order: 1;
+        display: flex;
+    }
+}
+
+.userbar {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.menu {
+    @include mixins.gridMenu;
+
+    @media (max-width: map.get(bp.$grid-breakpoints, sm)) {
+        order: 3;
+    }
+
+    &__items {
+        margin-top: 16px;
+        @include mixins.flexCenter;
+        gap: 15px;
+
+        @media (max-width: map.get(bp.$grid-breakpoints, sm)) {
+            margin-top: 30px;
+        }
+    }
+
+    &__link {
+        @extend %fontMenu;
+        color: vars.$color-black;
+    }
+
+}
