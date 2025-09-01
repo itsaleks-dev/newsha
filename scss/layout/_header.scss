@@ -75,6 +75,10 @@
         justify-content: start;
     }
 
+    @media (max-width: map.get(bp.$grid-breakpoints, xs)) {
+        display: none;
+    }
+
     &__items {
         margin-top: 16px;
         @include mixins.flexCenter;

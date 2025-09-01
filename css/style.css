@@ -137,6 +137,11 @@ body {
     justify-content: start;
   }
 }
+@media (max-width: 767.9px) {
+  .menu {
+    display: none;
+  }
+}
 .menu__items {
   margin-top: 16px;
   display: flex;
